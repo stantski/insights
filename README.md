@@ -11,7 +11,9 @@ To import a dashboard, simply follow the steps below.
 3. Download the `.zip` file.
 4. Inside the Device42 application, click the Insights+ menu option.
 5. Click the "Import" button located on the right side of the page.
+![Import Menu Option](/assets/import.png)
 6. Find and select the file you downloaded from GitHub.
-7. Check the box : "Are you sure you want to proceed? Importing can change dashboards that already exist". If a dashboard already exists, it will be overwritten 
+7. Check the box : "Are you sure you want to proceed? Importing can change dashboards that already exist". If the dashboard already exists, it will be overwritten.
+![Import Confirmation](/assets/import.png)
 8. Confirm the import.
 
