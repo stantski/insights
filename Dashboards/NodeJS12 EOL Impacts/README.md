@@ -6,4 +6,4 @@ Included analytics:
 	- breakdown of Business App impacts
 	- details of related resources and accounts
 	
-![Dashboard Thumbnail](/Assets/NodeJS-EOL_Thumbnail.png)
+![Dashboard Thumbnail](/Assets/Thumbnails/NodeJS-EOL_Thumbnail.png)
