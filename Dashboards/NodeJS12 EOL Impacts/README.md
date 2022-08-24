@@ -5,3 +5,5 @@ Included analytics:
 	- count of AWS functions utilizing NodeJS12
 	- breakdown of Business App impacts
 	- details of related resources and accounts
+	
+![Dashboard Thumbnail](/Assets/NodeJS-EOL_Thumbnail.png)
