@@ -7,4 +7,4 @@ Included analytics:
 	- details of related resources and accounts
 	- filters to narrow down different runtime versions of NodeJS
 	
-![Dashboard Thumbnail](/Assets/Thumbnails/NodeJS-EOL_Thumbnail.png = 250x250)
+![Dashboard Thumbnail](/Assets/Thumbnails/NodeJS_Functions_Thumbnail.png)
