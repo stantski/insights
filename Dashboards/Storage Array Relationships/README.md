@@ -1,7 +1,8 @@
 # Storage Array Relationships
 
 This dashboard contains information on Storage Arrays and their existing physical and logical relationships. It is an optional supplement to the Storage dashboard that exists natively in Device42.
-Included Analytics:
+<br />
+Included analytics:
 - Sankey Diagram 
 - Relational Graph
 
