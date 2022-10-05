@@ -1,5 +1,5 @@
 /*
- * Find relevant infrastructure that impacts or supports a specific set of business application(s).
+ * Find infrastructure that impacts or supports a specific set of business application(s).
  */
 SELECT
     businessapplication_fk
@@ -18,4 +18,4 @@ SELECT
     ,trends_url
 FROM view_dbb_adm_businessapp_composition_v2
 WHERE 
-    business_app_name IN  ('QTC Platform');
+    business_app_name IN  ('<your-business-app--name-here>');

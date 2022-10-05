@@ -1,6 +1,5 @@
-
 /*
- * Discover all business apps that a specific device impacts and it's relationships
+ * Discover all business apps that are impacted by a specific set of infrastructure devices and the relationships between them.
  */
 SELECT
     object_name
@@ -31,6 +30,6 @@ SELECT
 FROM
     view_dbb_adm_businessapp_composition_v2
 WHERE 
-    object_name = 'dev-vert-220v-pdu-01'
+    object_name IN('<your-device-name-here>')
 ORDER BY
     business_app_name ;

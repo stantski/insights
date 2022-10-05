@@ -1,3 +1,7 @@
+/*
+ * This query will combine BusApp Composition and Compute DBBs to gather information on all BusinessApp Impacting Devices
+ * that are using an OS that is going to hit EOL/EOS within the next 90 days. 
+ */
 SELECT
     ba_comp.device_fk               AS eol_device_fk
     ,compute.device_serial          AS eol_device_serial

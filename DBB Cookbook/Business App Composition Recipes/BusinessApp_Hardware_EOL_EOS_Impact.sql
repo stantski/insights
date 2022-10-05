@@ -1,4 +1,7 @@
-
+/*
+ * This query will combine BusApp Composition and Compute DBBs to gather information on all BusinessApp Impacting Devices
+ * that are going to hit EOL/EOS within the next 90 days. 
+ */
 SELECT
     ba_comp.device_fk               AS eol_device_fk
     ,compute.device_serial          AS eol_device_serial
@@ -19,5 +22,5 @@ FROM view_dbb_adm_businessapp_composition_v2 ba_comp
 JOIN view_dbb_compute_v2 compute
     ON compute.device_fk = ba_comp.device_fk 
 WHERE
-    compute.hdw_end_of_life      < current_date - 90
+    compute.hdw_end_of_life         < current_date - 90
     OR compute.hdw_end_of_support   < current_date - 90;
