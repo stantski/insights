@@ -17,3 +17,6 @@ To import a dashboard, simply follow the steps below.
 ![Import Confirmation](/Assets/Import_Confirmation.png)
 8. Confirm the import.
 
+# DBB Cookbook
+
+This repository also contains a collection of recipes that highlight how to utilize the Data Building Blocks (DBBs) within D42 to answer business questions. These recipes will will serve as a starting point to creating your own dashboards within Insights+.
