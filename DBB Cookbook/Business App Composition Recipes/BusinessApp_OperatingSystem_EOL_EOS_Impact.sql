@@ -5,7 +5,7 @@
 SELECT
     ba_comp.device_fk               AS eol_device_fk
     ,compute.device_serial          AS eol_device_serial
-    ,ba_comp.impacted_object        AS impacted_object_name
+    ,ba_comp.impacted_object        AS impacted_device_name
     ,ba_comp.business_app_name      AS impacted_businessapp
     ,ba_comp.businessapplication_fk
     ,ba_comp.impact_reason
@@ -23,5 +23,9 @@ JOIN view_dbb_compute_v2 compute
     ON compute.device_fk = ba_comp.device_fk 
 WHERE
     compute.os_end_of_life          < current_date - 90
-    OR compute.os_end_of_support    < current_date - 90;
+    OR compute.os_end_of_support    < current_date - 90
+ORDER BY
+    compute.os_end_of_life
+    ,compute.os_end_of_support
+    ,ba_comp.impacted_object;
     

@@ -18,4 +18,6 @@ SELECT
     ,trends_url
 FROM view_dbb_adm_businessapp_composition_v2
 WHERE 
-    business_app_name IN  ('<your-business-app--name-here>');
+    business_app_name IN  ('<your-business-app--name-here>')
+ORDER BY
+    impacted_object;
