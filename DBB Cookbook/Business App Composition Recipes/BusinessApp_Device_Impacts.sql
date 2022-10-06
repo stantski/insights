@@ -27,8 +27,7 @@ SELECT
     ,business_app_contains_pii
     ,business_app_internet_accessible
     ,business_app_notes
-FROM
-    view_dbb_adm_businessapp_composition_v2
+FROM view_dbb_adm_businessapp_composition_v2
 WHERE 
     object_name IN('<your-device-name-here>')
     OR impacted_object IN('<your-device-name-here>')
