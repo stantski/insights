@@ -1,5 +1,7 @@
 /*
- * Discover all business apps that are impacted by a specific set of infrastructure devices and the relationships between them.
+ * Business App Device Impacts
+ * Use this query if you are looking to discover all business apps that are impacted by a specific set of infrastructure devices and the relationships between them.
+ * You can use object_name to look at the source of the impact, or impacted_object to look at the device directly supporting the business application.
  */
 SELECT
     businessapplication_fk

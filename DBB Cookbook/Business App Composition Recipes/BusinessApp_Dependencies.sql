@@ -1,5 +1,6 @@
 /*
- * Find infrastructure that impacts or supports a specific set of business application(s).
+ * Business App Dependencies
+ * This is a simple query to quickly see what infrastructure impacts 1 or more Business App.
  */
 SELECT
     businessapplication_fk
