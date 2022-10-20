@@ -19,4 +19,4 @@ To import a dashboard, simply follow the steps below.
 
 # DBB & DOQL Cookbook
 
-This repository also contains a collection of recipes that highlight how to utilize the Data Building Blocks (DBBs) and DOQL objects within D42 to answer business questions. These recipes will will serve as a starting point to creating your own dashboards within Insights+.
+This repository also contains a collection of recipes that highlight how to utilize the Data Building Blocks (DBBs) and DOQL objects within D42 to answer business questions. These recipes will serve as a starting point to creating your own dashboards within Insights+.

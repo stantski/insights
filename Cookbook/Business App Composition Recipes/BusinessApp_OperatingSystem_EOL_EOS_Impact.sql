@@ -1,7 +1,7 @@
 /*
  * BusinessApp OS EOL/EOS Impacts
- * This query will combine BusApp Composition and Compute DBBs to gather information on all BusinessApp Impacting Devices
- * that are using an OS that is going to hit EOL/EOS within the next 90 days. Use this if you need to analyze mny of the changes needed when that EOL/EOS date approaches.
+ * This query also utilizes the Compute DBB to gather information on all BusinessApp Impacting Devices that are using an OS that is going to hit EOL/EOS within the next 90 days.
+ * Use this if you need to analyze mny of the changes needed when that EOL/EOS date approaches.
  * You can easily shift the window or focus on either EOL/EOS by editing the included WHERE filter clause.
  */
 SELECT

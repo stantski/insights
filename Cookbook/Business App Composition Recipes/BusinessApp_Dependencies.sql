@@ -1,6 +1,6 @@
 /*
  * Business App Dependencies
- * This is a simple query to quickly see what infrastructure impacts 1 or more Business App.
+ * This is a simple query to quickly see what infrastructure impacts one or more Business App.
  */
 SELECT
     businessapplication_fk
