@@ -1,0 +1,48 @@
+slice_name: EBS Volumes Attached to Powered Off Instances
+viz_type: table
+params:
+  adhoc_filters: []
+  all_columns:
+  - ebs_name
+  - ebs_storage_type
+  - ebs_capacity
+  - ebs_creation_date
+  - instance_name
+  - status
+  - instance_type
+  - instance_id
+  - account
+  - location
+  - virt_type
+  - service_name
+  - os_platform
+  - date_created
+  - date_modified
+  - last_edited
+  - ebs_custom_fields
+  - notes
+  color_pn: true
+  datasource: 62__table
+  extra_form_data: {}
+  granularity_sqla: last_edited
+  groupby: []
+  metrics: []
+  order_by_cols: []
+  order_desc: true
+  percent_metrics: []
+  query_mode: raw
+  row_limit: 1000
+  server_page_length: 10
+  show_cell_bars: true
+  slice_id: 140
+  table_timestamp_format: smart_date
+  time_grain_sqla: P1D
+  time_range: No filter
+  time_range_endpoints:
+  - inclusive
+  - exclusive
+  viz_type: table
+cache_timeout: null
+uuid: 76285df8-b85e-452c-bee9-81f9df8cddaf
+version: 1.0.0
+dataset_uuid: bdad63a1-6f3e-455f-853c-cb8ead305f49

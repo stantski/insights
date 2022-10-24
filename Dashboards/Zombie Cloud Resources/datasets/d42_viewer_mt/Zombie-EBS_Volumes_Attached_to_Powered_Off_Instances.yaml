@@ -1,0 +1,266 @@
+table_name: Zombie-EBS Volumes Attached to Powered Off Instances
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: d42_readonly_mt
+sql: "-- Note: Unless you save your query, these tabs will NOT persist if you clear\
+  \ your cookies or change browsers.\n\nselect \n    tr.resource_pk              \
+  \    ebs_id, \n    tr.resource_name                ebs_name, \n    tr.details->>'storage_type'\
+  \     ebs_storage_type, \n    tr.details->>'storage_usable'   ebs_capacity, \n \
+  \   tr.details->>'creation_date'    ebs_creation_date, \n    ci.instance_name,\n\
+  \    ci.status ,\n    ci.instance_type,\n    ci.instance_id ,\n    ci.account,\n\
+  \    ci.\"location\" ,\n    ci.virt_type,\n    ci.service_name,\n    ci.os_platform,\n\
+  \    ci.date_created,\n    ci.date_modified,\n    ci.last_edited,\n    tr.vendor_custom_fields\
+  \         ebs_custom_fields,\n    ci.notes\nfrom view_resource_v2 tr \n    inner\
+  \ join view_deviceresource_v1 dr on tr.resource_pk = dr.resource_fk \n    inner\
+  \ join view_cloudinstance_v1 ci on ci.device_fk = dr.device_fk \nwhere tr.vendor_resource_type\
+  \ = 'EBS' and ci.status  not in ('Running','Deleted')"
+params: null
+template_params: null
+filter_select_enabled: false
+fetch_values_predicate: null
+extra: null
+uuid: bdad63a1-6f3e-455f-853c-cb8ead305f49
+metrics:
+- metric_name: count
+  verbose_name: null
+  metric_type: null
+  expression: count(*)
+  description: null
+  d3format: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: last_edited
+  verbose_name: null
+  is_dttm: true
+  is_active: null
+  type: DATETIME
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ebs_creation_date
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ebs_storage_type
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ebs_custom_fields
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ebs_capacity
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: instance_name
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ebs_name
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: instance_id
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: service_name
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: instance_type
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: os_platform
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: virt_type
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: account
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: location
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: status
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: notes
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: ebs_id
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: INT
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: date_created
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+- column_name: date_modified
+  verbose_name: null
+  is_dttm: false
+  is_active: null
+  type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra:
+    warning_markdown: null
+version: 1.0.0
+database_uuid: 76f06d58-9542-4457-b932-1445879b5ba6

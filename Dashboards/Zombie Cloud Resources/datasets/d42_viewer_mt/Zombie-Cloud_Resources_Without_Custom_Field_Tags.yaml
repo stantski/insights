@@ -1,0 +1,246 @@
+table_name: Zombie-Cloud Resources Without Custom Field Tags
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: d42_readonly_mt
+sql: "-- Note: Unless you save your query, these tabs will NOT persist if you clear\
+  \ your cookies or change browsers.\n\nselect \n    tr.resource_pk, \n    tr.resource_name,\
+  \ \n    tr.vendor_resource_type, \n    tr.region, \n    tr.zones,\n    ci.instance_name,\n\
+  \    ci.status ,\n    ci.instance_type,\n    ci.instance_id ,\n    ci.account,\n\
+  \    ci.\"location\" ,\n    ci.virt_type,\n    ci.service_name,\n    ci.os_platform,\n\
+  \    ci.date_created,\n    ci.date_modified,\n    ci.last_edited,\n    tr.notes\
+  \            resource_notes,\n    ci.notes            cloud_instance_notes\nfrom\
+  \ view_resource_v2 tr\ninner join view_cloudinfrastructure_v2 cinf     on cinf.cloudinfrastructure_pk\
+  \      = tr.cloudinfrastructure_fk \nleft outer join view_deviceresource_v1 dr \
+  \      on tr.resource_pk                   = dr.resource_fk \nleft join view_cloudinstance_v1\
+  \ ci              on ci.device_fk                     = dr.device_fk \nwhere  not(tr.category\
+  \ && array['Kubernetes'])\n    and tr.vendor_custom_fields is null"
+params: null
+template_params: null
+filter_select_enabled: false
+fetch_values_predicate: null
+extra: null
+uuid: 723f562f-bd51-4950-ab34-2b32324ce890
+metrics:
+- metric_name: count
+  verbose_name: null
+  metric_type: null
+  expression: count(*)
+  description: null
+  d3format: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: last_edited
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATETIME
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: cloud_instance_notes
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: vendor_resource_type
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: instance_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: instance_id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: service_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: resource_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: instance_type
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: os_platform
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: resource_notes
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: virt_type
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: account
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: location
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: status
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: region
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: zones
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: resource_pk
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INT
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: date_created
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: date_modified
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 76f06d58-9542-4457-b932-1445879b5ba6

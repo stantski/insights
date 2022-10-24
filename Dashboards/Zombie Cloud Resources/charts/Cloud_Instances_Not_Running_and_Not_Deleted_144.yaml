@@ -1,0 +1,55 @@
+slice_name: Cloud Instances Not Running and Not Deleted
+viz_type: table
+params:
+  adhoc_filters:
+  - clause: WHERE
+    comparator:
+    - Running
+    - Deleted
+    expressionType: SIMPLE
+    filterOptionName: filter_smn9zd8m2hm_bf3f225gns
+    isExtra: false
+    isNew: false
+    operator: NOT IN
+    operatorId: NOT_IN
+    sqlExpression: null
+    subject: status
+  all_columns:
+  - instance_name
+  - status
+  - instance_type
+  - instance_id
+  - account
+  - location
+  - virt_type
+  - service_name
+  - os_platform
+  - date_created
+  - date_modified
+  - last_edited
+  - notes
+  color_pn: true
+  datasource: 60__table
+  extra_form_data: {}
+  granularity_sqla: last_edited
+  groupby: []
+  metrics: []
+  order_by_cols: []
+  order_desc: true
+  percent_metrics: []
+  query_mode: raw
+  row_limit: 10000
+  server_page_length: 10
+  show_cell_bars: true
+  slice_id: 144
+  table_timestamp_format: smart_date
+  time_grain_sqla: P1D
+  time_range: No filter
+  time_range_endpoints:
+  - inclusive
+  - exclusive
+  viz_type: table
+cache_timeout: null
+uuid: 8f788570-59e4-411f-8cff-378977a278be
+version: 1.0.0
+dataset_uuid: a3b2e6f1-23c0-4dd4-9b1e-19bb4fe294d6

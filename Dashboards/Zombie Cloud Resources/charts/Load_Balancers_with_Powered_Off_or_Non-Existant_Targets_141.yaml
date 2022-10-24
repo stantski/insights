@@ -1,0 +1,45 @@
+slice_name: Load Balancers with Powered Off or Non-Existant Targets
+viz_type: table
+params:
+  adhoc_filters: []
+  all_columns:
+  - lb_name
+  - lb_custom_fields
+  - instance_name
+  - status
+  - instance_type
+  - instance_id
+  - account
+  - location
+  - virt_type
+  - service_name
+  - os_platform
+  - date_created
+  - date_modified
+  - last_edited
+  - notes
+  color_pn: true
+  datasource: 63__table
+  extra_form_data: {}
+  granularity_sqla: last_edited
+  groupby: []
+  metrics: []
+  order_by_cols: []
+  order_desc: true
+  percent_metrics: []
+  query_mode: raw
+  row_limit: 1000
+  server_page_length: 10
+  show_cell_bars: true
+  slice_id: 141
+  table_timestamp_format: smart_date
+  time_grain_sqla: P1D
+  time_range: No filter
+  time_range_endpoints:
+  - inclusive
+  - exclusive
+  viz_type: table
+cache_timeout: null
+uuid: 6f4aaf09-759d-4082-b4ad-1d19df629be2
+version: 1.0.0
+dataset_uuid: 28d3af88-ac8a-4fbb-b998-91163fe81219

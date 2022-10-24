@@ -1,0 +1,56 @@
+slice_name: Count of Load Balancers with Powered Off or Non-Existant Targets
+viz_type: dist_bar
+params:
+  adhoc_filters: []
+  bottom_margin: auto
+  color_scheme: supersetColors
+  columns: []
+  datasource: 63__table
+  extra_form_data: {}
+  granularity_sqla: last_edited
+  groupby:
+  - category
+  metrics:
+  - aggregate: COUNT
+    column:
+      certification_details: null
+      certified_by: null
+      column_name: lb_id
+      description: null
+      expression: ''
+      filterable: true
+      groupby: true
+      id: 920
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: INT
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    isNew: false
+    label: COUNT(lb_id)
+    optionName: metric_q5s5vuna928_8g547c9l5rl
+    sqlExpression: null
+  order_desc: true
+  rich_tooltip: true
+  row_limit: 10000
+  show_controls: false
+  show_legend: false
+  slice_id: 146
+  time_range: No filter
+  time_range_endpoints:
+  - inclusive
+  - exclusive
+  viz_type: dist_bar
+  x_ticks_layout: auto
+  y_axis_bounds:
+  - null
+  - null
+  y_axis_format: SMART_NUMBER
+cache_timeout: null
+uuid: 437669aa-7432-4126-90e8-057caed1f092
+version: 1.0.0
+dataset_uuid: 28d3af88-ac8a-4fbb-b998-91163fe81219
